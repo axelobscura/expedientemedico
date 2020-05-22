@@ -6,20 +6,19 @@ import Col from 'react-bootstrap/Col';
 
 export default function Home() {
   return (
-    <div>
+    <>
 
       <Header />
 
-      <Container className="d-flex vh-100 justify-content-center align-item-center">
-        <Row>
-          <Col xs={6}>
-            <h2>hola.</h2>
+      <Container fluid>
+        <Row className="d-flex vh-100 justify-content-center align-items-center text-center">
+          <Col sm={6}>
+            <h2>MÉDICO</h2>
           </Col>
-          <Col xs={6}>
-            <h2>hola.</h2>
+          <Col sm={6}>
+            <h2>PACIENTE</h2>
           </Col>
         </Row>
-
       </Container>
 
       <Footer />
@@ -36,6 +35,6 @@ export default function Home() {
         }
       `}</style>
 
-    </div>
+    </>
   )
 }

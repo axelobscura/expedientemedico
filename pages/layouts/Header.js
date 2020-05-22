@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>EXPEDIENTE MÉDICO</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -37,7 +36,7 @@ const Header = () => {
                     font-family: 'Quicksand', sans-serif;
                 }
             `}</style>
-        </div>
+        </>
     )
 }
 
