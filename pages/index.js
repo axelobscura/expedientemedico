@@ -10,7 +10,7 @@ export default function Home() {
 
       <Header />
 
-      <Container class="inicio" fluid>
+      <Container className="d-flex vh-100 justify-content-center align-item-center">
         <Row>
           <Col xs={6}>
             <h2>hola.</h2>
@@ -19,22 +19,20 @@ export default function Home() {
             <h2>hola.</h2>
           </Col>
         </Row>
+
       </Container>
 
       <Footer />
 
       <style jsx>{`
         .inicio {
-          min-height: 100vh;
+          min-height: 100vh !important;
           width: 100%;
           padding: 0 0.5rem;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-        },
-        .inicio h2 {
-          text-align: center;
         }
       `}</style>
 
