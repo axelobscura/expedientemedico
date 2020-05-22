@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
             <footer className="d-flex justify-content-center align-items-center">
-                <p>© 2018 - 2020 <b>Plataforma Expediente Médico</b>.Todos Los Derechos Reservados.{' '}</p>
+                <p>© 2020 <b>Plataforma Expediente Médico</b>.Todos Los Derechos Reservados.{' '}</p>
             </footer>
 
             <style jsx>{`

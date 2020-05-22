@@ -14,16 +14,32 @@ export default function Home() {
       <Container fluid>
         <Row className="d-flex vh-100 justify-content-center align-items-center text-center">
           <Col
-            sm={6}
-            className="d-flex vh-100 justify-content-center align-items-center text-center"
-            style={{ background: '#d2d2d2' }}>
-            <Link href="/medico"><h2>PROFESIONALES DE LA SALUD</h2></Link>
-          </Col>
-          <Col
-            sm={6}
-            className="d-flex vh-100 justify-content-center align-items-center text-center"
-            style={{ background: '#f1f1f1' }}>
-            <Link href="/paciente"><h2>PACIENTE / USUARIO</h2></Link>
+            sm={12}
+            className="d-flex vh-100 justify-content-center align-items-center text-center">
+            <form>
+              <h3>EXPEDIENTE MÉDICO</h3>
+              <div className="form-group">
+                <label>Correo Electrónico:</label>
+                <input type="email" className="form-control" placeholder="Ingresar Correo" />
+              </div>
+
+              <div className="form-group">
+                <label>Contraseña:</label>
+                <input type="password" className="form-control" placeholder="Ingresar Contraseña" />
+              </div>
+
+              <div className="form-group">
+                <div className="custom-control custom-checkbox">
+                  <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                  <label className="custom-control-label" htmlFor="customCheck1">Recordarme</label>
+                </div>
+              </div>
+
+              <button type="submit" className="btn btn-primary btn-block">Ingresar a su Expediente</button>
+              <p className="forgot-password text-right">
+                Olvidé <a href="#">contraseña?</a>
+              </p>
+            </form>
           </Col>
         </Row>
       </Container>
@@ -39,6 +55,11 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+        form {
+          box-shadow: 0 0 10px #ccc;
+          padding: 50px;
+          text-align: left;
         }
       `}</style>
 

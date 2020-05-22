@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <>
             <Head>
-                <title>EXPEDIENTE MÉDICO</title>
+                <title>EXPEDIENTE MÉDICO MÉXICO</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700"
@@ -25,6 +25,9 @@ const Header = () => {
                 </Nav.Item>
                 <Nav.Item>
                     <Nav.Link href="/paciente">Paciente</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/contacto">Contacto</Nav.Link>
                 </Nav.Item>
 
             </Nav>
