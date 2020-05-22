@@ -1,4 +1,5 @@
 import Header from './layouts/Header';
+import Footer from './layouts/Footer';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -20,15 +21,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          © 2020 Todos Los Derechos Reservados.{' '}
-        </a>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         .inicio {

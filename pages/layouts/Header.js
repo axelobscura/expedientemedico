@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
@@ -12,6 +13,21 @@ const Header = () => {
                     rel="stylesheet">
                 </link>
             </Head>
+
+            <Nav
+                activeKey="/"
+            //onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+            >
+                <Nav.Item>
+                    <Nav.Link href="/">Inicio</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/paciente">Paciente</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/medico">Médico</Nav.Link>
+                </Nav.Item>
+            </Nav>
 
             <style jsx global>{`
                 html,
