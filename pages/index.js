@@ -1,4 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function Home() {
   return (
@@ -8,7 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
+      <Container>
+        <Row>
+          <Col>
+            <h2>hola</h2>
+          </Col>
+        </Row>
+      </Container>
 
       <footer>
         <a
@@ -16,8 +25,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          © 2020 Todos Los Derechos Reservados{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          © 2020 Todos Los Derechos Reservados............{' '}
         </a>
       </footer>
 
