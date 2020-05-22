@@ -21,11 +21,12 @@ const Header = () => {
                     <Nav.Link href="/">Inicio</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/paciente">Paciente</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
                     <Nav.Link href="/medico">Médico</Nav.Link>
                 </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/paciente">Paciente</Nav.Link>
+                </Nav.Item>
+
             </Nav>
 
             <style jsx global>{`

@@ -8,7 +8,7 @@ function Paciente() {
     return (
         <div>
             <Header />
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col>
                         <h2>PACIENTE</h2>
