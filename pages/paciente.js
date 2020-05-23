@@ -1,4 +1,5 @@
 import Header from './layouts/Header';
+import Menu from './layouts/Menu';
 import Footer from './layouts/Footer';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -8,6 +9,7 @@ function Paciente() {
     return (
         <div>
             <Header />
+            <Menu />
             <Container fluid>
                 <Row>
                     <Col>

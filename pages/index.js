@@ -18,9 +18,10 @@ export default function Home() {
             className="d-flex vh-100 justify-content-center align-items-center text-center">
             <form>
               <h3>EXPEDIENTE MÉDICO</h3>
+              <hr />
               <div className="form-group">
                 <label>Correo Electrónico:</label>
-                <input type="email" className="form-control" placeholder="Ingresar Correo" />
+                <input type="email" className="form-control" placeholder="Ingresar su Email" />
               </div>
 
               <div className="form-group">
@@ -35,7 +36,16 @@ export default function Home() {
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-block">Ingresar a su Expediente</button>
+              <Row className="mb-3">
+                <Col sm={6}>
+                  <Link href="/medico"><button type="submit" className="btn btn-primary btn-block">DOCTOR</button></Link>
+                </Col>
+                <Col sm={6}>
+                  <Link href="/paciente"><button type="submit" className="btn btn-primary btn-block">PACIENTE</button></Link>
+                </Col>
+              </Row>
+
+
               <p className="forgot-password text-right">
                 Olvidé <a href="#">contraseña?</a>
               </p>
