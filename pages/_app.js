@@ -69,7 +69,7 @@ export default class MyApp extends App {
 
         return (
             <Container>
-                <Component {...pageProps} {...this.state} tipo={tipo} />
+                <Component {...pageProps} {...this.state} />
             </Container>
         )
     }
