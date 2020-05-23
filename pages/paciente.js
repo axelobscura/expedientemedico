@@ -10,7 +10,7 @@ function Paciente(props) {
     return (
         <div>
             <Header />
-            <Menu />
+            <Menu {...props} />
             <Container fluid>
                 <Row>
                     <Col className="p-0 m-0">
