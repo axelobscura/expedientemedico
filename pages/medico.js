@@ -15,7 +15,7 @@ function Paciente() {
             <Container fluid>
                 <Row className="titulo">
                     <Col>
-                        <h2 className="d-flex align-items-center mr-5"><FaChevronRight style={{ fontSize: '1rem', margin: '0', padding: '0' }} /> PROFESIONAL DE LA SALUD</h2>
+                        <h2 className="d-flex align-items-center"><FaChevronRight style={{ fontSize: '1rem', margin: '0', padding: '0' }} /> PROFESIONAL DE LA SALUD</h2>
                     </Col>
                 </Row>
                 <Row>
