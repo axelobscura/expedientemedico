@@ -11,9 +11,6 @@ const Header = () => {
                     rel="stylesheet">
                 </link>
             </Head>
-
-
-
             <style jsx global>{`
                 html,
                 body {

@@ -1,8 +1,9 @@
 import { Nav } from 'react-bootstrap';
 
-const Menu = () => {
+export default function Menu(props) {
     return (
         <>
+            <h4>{props.usuarioActivo.email}</h4>
             <Nav
                 activeKey="/"
                 className="menu"
@@ -40,5 +41,3 @@ const Menu = () => {
         </>
     )
 }
-
-export default Menu;

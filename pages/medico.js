@@ -7,11 +7,11 @@ import { FaChevronRight } from 'react-icons/fa';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function Paciente() {
+function Paciente(props) {
     return (
         <div>
             <Header />
-            <Menu />
+            <Menu {...props} />
             <Container fluid>
                 <Row className="titulo">
                     <Col className="p-0 m-0">

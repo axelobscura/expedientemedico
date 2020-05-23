@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import Container from 'react-bootstrap/Container';
@@ -6,29 +5,27 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 export default function Home(props) {
-
   return (
     <>
-
-      <Header />
-
+      <Header {...props} />
       <Container fluid>
         <Row className="d-flex vh-100 justify-content-center align-items-center text-center">
           <Col
             sm={12}
             className="d-flex vh-100 justify-content-center align-items-center text-center">
-            <form>
-              <h3>EXPEDIENTE MÉDICO</h3>
-              <h4>{props.usuario.medico.nombre}</h4>
+
+            <form onSubmit={props.tipo}>
+              <h3 className="text-center">EXPEDIENTE MÉDICO</h3>
+              <p>{props.vacio ? "Bienvenido!, Por Favor Ingrese sus Datos" : ""}</p>
               <hr />
               <div className="form-group">
                 <label>Correo Electrónico:</label>
-                <input type="email" className="form-control" placeholder="Ingresar su Email" />
+                <input type="email" name="email" className="form-control" placeholder="Ingresar su Email" required />
               </div>
 
               <div className="form-group">
                 <label>Contraseña:</label>
-                <input type="password" className="form-control" placeholder="Ingresar Contraseña" />
+                <input type="password" name="password" className="form-control" placeholder="Ingresar Contraseña" required />
               </div>
 
               <div className="form-group">
@@ -39,14 +36,10 @@ export default function Home(props) {
               </div>
 
               <Row className="mb-3">
-                <Col sm={6}>
-                  <Link href="/medico"><button type="submit" className="btn btn-primary btn-block">DOCTOR</button></Link>
-                </Col>
-                <Col sm={6}>
-                  <Link href="/paciente"><button type="submit" className="btn btn-primary btn-block">PACIENTE</button></Link>
+                <Col sm={12}>
+                  <button type="submit" className="btn btn-primary btn-block">INGRESAR</button>
                 </Col>
               </Row>
-
 
               <p className="forgot-password text-right">
                 Olvidé <a href="#">contraseña?</a>
@@ -72,6 +65,11 @@ export default function Home(props) {
           box-shadow: 0 0 10px #ccc;
           padding: 50px;
           text-align: left;
+          background: #ffffff;
+        }
+        .btn {
+          width: 100%;
+          border-radius: 0;
         }
       `}</style>
 
