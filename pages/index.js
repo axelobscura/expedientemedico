@@ -5,7 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-export default function Home() {
+export default function Home(props) {
+
   return (
     <>
 
@@ -18,6 +19,7 @@ export default function Home() {
             className="d-flex vh-100 justify-content-center align-items-center text-center">
             <form>
               <h3>EXPEDIENTE MÉDICO</h3>
+              <h4>{props.usuario.medico.nombre}</h4>
               <hr />
               <div className="form-group">
                 <label>Correo Electrónico:</label>
