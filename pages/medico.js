@@ -51,9 +51,10 @@ function Paciente() {
                     padding: 10px;
                     margin-top:2px;
                     background: #64B7DD;
-                    color: #ffffff;
+                    color: #fff;
                     font-weight: 100;
                     transition: all 0.5s;
+                    font-size: 1.2rem;
                 }
                 ul li a:hover {
                     background: #283C5B;
