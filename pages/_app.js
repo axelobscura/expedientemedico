@@ -1,7 +1,6 @@
 // ensure all pages have Bootstrap CSS
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from 'react';
+import React from 'react';
 import App, { Container } from 'next/app';
 import Router from 'next/router';
 
@@ -68,7 +67,9 @@ export default class MyApp extends App {
         }
 
         return (
-            <Component {...pageProps} {...this.state} />
+            <Container>
+                <Component {...pageProps} {...this.state} tipo={tipo} />
+            </Container>
         )
     }
 }
