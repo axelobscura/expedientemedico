@@ -42,6 +42,22 @@ function Paciente() {
             <style jsx global>{`
                 ul {
                     list-style: none;
+                    padding: 0;
+                }
+                ul li a {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    margin-top:2px;
+                    background: #64B7DD;
+                    color: #ffffff;
+                    font-weight: 100;
+                    transition: all 0.5s;
+                }
+                ul li a:hover {
+                    background: #283C5B;
+                    color: #ffffff;
+                    text-decoration: none;
                 }
             `}</style>
         </div>
