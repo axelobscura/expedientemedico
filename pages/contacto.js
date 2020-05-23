@@ -13,7 +13,7 @@ const Contacto = () => {
             <Menu />
             <Container fluid>
                 <Row>
-                    <Col>
+                    <Col className="p-0 m-0">
                         <h2 className="d-flex align-items-center"><FaChevronRight style={{ fontSize: '1rem', margin: '0', padding: '0' }} /> CONTACTO</h2>
                     </Col>
                 </Row>
