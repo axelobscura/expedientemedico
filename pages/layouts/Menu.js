@@ -1,9 +1,11 @@
 import { Nav } from 'react-bootstrap';
 
 export default function Menu(props) {
+    let email = props.usuarioActivo.email;
+    let tipo = props.usuarioActivo.tipo;
     return (
         <>
-            <h4>{props.usuarioActivo.email}</h4>
+
             <Nav
                 activeKey="/"
                 className="menu"
@@ -12,12 +14,15 @@ export default function Menu(props) {
                 <Nav.Item>
                     <Nav.Link href="/">Inicio</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="/medico">Médico</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="/paciente">Paciente</Nav.Link>
-                </Nav.Item>
+                {tipo === "medico" ?
+                    <Nav.Item>
+                        <Nav.Link href="/medico">Médico</Nav.Link>
+                    </Nav.Item>
+                    :
+                    <Nav.Item>
+                        <Nav.Link href="/paciente">Paciente</Nav.Link>
+                    </Nav.Item>
+                }
                 <Nav.Item>
                     <Nav.Link href="/contacto">Contacto</Nav.Link>
                 </Nav.Item>

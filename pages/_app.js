@@ -2,7 +2,8 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import App, { Container } from 'next/app'
+import App, { Container } from 'next/app';
+import Router from 'next/router';
 
 export default class MyApp extends App {
     static async getInitialProps({ Component, router, ctx }) {
@@ -50,16 +51,20 @@ export default class MyApp extends App {
             let password = e.target.password.value;
 
             this.state.usuarios.map(usuario => {
-                if (nombre == usuario.correo) {
-                    this.setState(prevState => {
-                        let usuarioActivo = { ...prevState.usuarioActivo };
-                        usuarioActivo.email = nombre;
-                        return { usuarioActivo };
-                    })
+                if (usuario.correo === nombre) {
+                    console.log('si hay usuario');
+                    var usuarioActivo = { ...this.state.usuarioActivo }
+                    usuarioActivo.email = nombre;
+                    usuarioActivo.tipo = usuario.tipo
+                    this.setState({ usuarioActivo }, () => {
+                        console.log("Usuario activo: " + JSON.stringify(this.state.usuarioActivo));
+                        Router.push('/medico')
+                    });
+                } else {
+                    console.log('no hay usuario...');
                 }
             })
 
-            console.log("Uausrio activo: " + this.state.usuarioActivo.email);
         }
 
         return (
