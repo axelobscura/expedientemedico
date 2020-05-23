@@ -21,6 +21,11 @@ const Header = () => {
                     margin: 0;
                     font-family: 'Quicksand', sans-serif;
                 }
+                h2 {
+                    background: #333333;
+                    color: #ffffff;
+                    padding: 10px;
+                }
             `}</style>
         </>
     )

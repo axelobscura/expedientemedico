@@ -3,6 +3,7 @@ import Header from './layouts/Header';
 import Menu from './layouts/Menu';
 import Footer from './layouts/Footer';
 import Container from 'react-bootstrap/Container';
+import { FaChevronRight } from 'react-icons/fa';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -12,9 +13,9 @@ function Paciente() {
             <Header />
             <Menu />
             <Container fluid>
-                <Row>
+                <Row className="titulo">
                     <Col>
-                        <h2>MÉDICO</h2>
+                        <h2 className="d-flex align-items-center mr-5"><FaChevronRight style={{ fontSize: '1rem', margin: '0', padding: '0' }} /> PROFESIONAL DE LA SALUD</h2>
                     </Col>
                 </Row>
                 <Row>
